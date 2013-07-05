@@ -4,22 +4,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Top Products And Vendors</title>
 
-<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-
 <script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> 
  
 <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
 <script type="text/javascript" src="js/showhide.js"></script> 
 <script type="text/JavaScript" src="js/jquery.mousewheel.js"></script> 
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
+<script type="text/javascript" src="js/ddsmoothmenu.js" />
+<script type="text/javascript" src="js/search.js"></script> <!-- Js from recent.php -->
 
-
-
-</script>
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="css/TBLCSS.css" rel="stylesheet" type="text/css" />  <!-- Styles from recent.php -->
+<link href="css/div.css" rel="stylesheet" type="text/css" />  <!-- Styles from recent.php -->
 
 <script type="text/javascript">
 
@@ -47,13 +45,7 @@ ddsmoothmenu.init({
   })();
 
 </script>
-<script language="javascript" type="text/javascript">
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
  
-
 
 <link href="css/TBLCSS.css" rel="stylesheet" type="text/css" />
 <link href="css/div.css" rel="stylesheet" type="text/css" />
@@ -85,23 +77,23 @@ ddsmoothmenu.init({
     <div id="tabscontent" align="center">
     
       <div class="tabpage" id="tabpage_1">
-    
-   <iframe src="recent.php" style=" width:940px; hight:100%; overflow:visible; frameborder=0;"  onload='javascript:resizeIframe(this);' ></iframe>
+    <?php include_once 'recent.php';?>
+   <!-- <iframe src="recent.php" style=" width:940px; hight:100%; overflow:visible; frameborder=0;"  onload='javascript:resizeIframe(this);' ></iframe> -->
      
       </div>
       
       <div class="tabpage" id="tabpage_2">
       
-        <iframe src="product.php" style=" width:940px; hight:100%;  frameborder=0; "onload='javascript:resizeIframe(this);'>       </iframe>
+    <!--     <iframe src="product.php" style=" width:940px; hight:100%;  frameborder=0; "onload='javascript:resizeIframe(this);'>       </iframe> -->
       </div>
       
       <div class="tabpage" id="tabpage_3">
      
-          <iframe src="vendor.php" style=" width:940px; hight:100%; overflow:hidden; frameborder=0; " onload='javascript:resizeIframe(this);'>      </iframe>
+       <!--      <iframe src="vendor.php" style=" width:940px; hight:100%; overflow:hidden; frameborder=0; " onload='javascript:resizeIframe(this);'>      </iframe> -->
             </div>
           <div class="tabpage" id="tabpage_4">
           
-         <iframe src="History.php" style="height:100%; width:940px; overflow:hidden; frameborder=0;"  onload='javascript:resizeIframe(this);'>         </iframe>
+       <!--     <iframe src="History.php" style="height:100%; width:940px; overflow:hidden; frameborder=0;"  onload='javascript:resizeIframe(this);'>         </iframe> -->
             </div>    
         
   </div>
@@ -117,5 +109,6 @@ ddsmoothmenu.init({
     	Copyright © Kuaus USA 2013
     </div> 
 </div> 
+ 
 </body>
 </html>

@@ -1,43 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Product</title>
-
-<link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/search.js"></script>
-<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> 
  
-<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
-<script type="text/javascript" src="js/showhide.js"></script> 
-<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script> 
-
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/ddsmoothmenu.js">
-
-
-
-</script>
-
-<script type="text/javascript">
-
-ddsmoothmenu.init({
-	mainmenuid: "templatemo_menu", 
-	orientation: 'h', 
-	classname: 'ddsmoothmenu', 
-	
-	contentsource: "markup"
-})
-
-</script> 
-
-
-
-
-<link href="css/TBLCSS.css" rel="stylesheet" type="text/css" />
-<link href="css/div.css" rel="stylesheet" type="text/css" />
 <?php 
 include "db.php";
 $sql="select max(date_executed) as maxd from crawl";
@@ -48,34 +9,27 @@ $result=mysql_query($sql);
 	
 ?>
 
-</head>
-
-<body id="home" onload="tableSearch.init();">
-
-<div id="templatemo_main">
-<div id="divp">
 <h3 align="center"	>Recent Violations( <?php echo $str; ?>)</h3>
-<table align="center" >
+<table align="center"   >
 <tr>
-<td>
+<td >
   
-  <div align="right"><input  type="text" size="30" width="300" hight="40" maxlength="1000" value="" id="textBoxSearch" onkeyup="tableSearch.search(event);"  style="background-image:url(images/sr.png) no-repeat 4px 4px;
-	
+ <!-- transfer all inline styles into style.css -->
+  <input  type="text" size="30" width="300" hight="40" maxlength="1000" value="" id="textBoxSearch" onkeyup="tableSearch.search(event);"  style="background-image:url(images/sr.png) no-repeat 4px 4px;	
 	border:2px solid #456879;
-	border-radius:10px;
+	border-radius:10px;float:left;
 	height: 22px;
-	width: 230px; "/> <a href="" onclick="tableSearch.runSearch();"><img src="images/sr.png" style="height:20; width:20;"></a>
-     <a class="button_example"  href="export_recent.php"> <img src="images/dn.png" width="20" height="20" /> </a>
-               
-</div>
+	width: 230px; "/> 
+	<a href="" onclick="tableSearch.runSearch();" style="padding-top:0px;">
+	<img src="images/sr.png" style="height:20px; width:20px; float:left; "></a>
+     <a  style="float:left;padding-top:0px;"  href="export_recent.php"> <img src="images/dn.png" width="20" height="20" /> </a>
+ 
 	</td>
 </tr>
 <tr>
 <td>
-   
-    
-    <div class="GrayBlack">
-  		<table align="center">
+       
+  		<table class="GrayBlack" align="center">
         	<tbody id="data">
  		<tr> 
  			 <td>
@@ -104,7 +58,6 @@ $result=mysql_query($sql);
 
 					
 <?php
-include('db.php');
        
 $sql="select catalog_product_flat_1.sku,
 website.name as wname, 
@@ -148,14 +101,11 @@ $result=mysql_query($sql);
      //  mysql_close($con); 
  ?>
  
-</div>
+ 
 
 </td>  
        
    
 </tr>       
  </tbody></table> 
- </div>   
-</div>
-
-</body></html>
+ 
