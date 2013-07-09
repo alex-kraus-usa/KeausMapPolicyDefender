@@ -14,7 +14,7 @@
 <script src="js/exporting.js"></script>  
 <!-- hightcharts libraries -->
 
-<!--<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> dublicate--> 
+<!--<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>  
  
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
 <script type="text/javascript" src="js/showhide.js"></script> 
@@ -22,9 +22,9 @@
 
 <!-- <script type="text/javascript" src="js/jquery.min.js"></script>  dublicate--> 
 <!-- <script type="text/javascript" src="js/ddsmoothmenu.js" /> -->
-<script type="text/javascript" src="js/search.js"></script> <!-- Js from recent.php -->
+<!-- <script type="text/javascript" src="js/search.js"></script> <!-- Js from recent.php -->
 
-<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" /> -->
 <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
 <link href="css/TBLCSS.css" rel="stylesheet" type="text/css" />  <!-- Styles from recent.php -->
 <link href="css/div.css" rel="stylesheet" type="text/css" />  <!-- Styles from recent.php -->
@@ -105,8 +105,8 @@ ddsmoothmenu.init({
     <div id="tabscontent" align="center">
     
       <div class="tabpage" id="tabpage_1">
-     
-    <?php  // include_once 'recent.php';?>
+      <?php include_once 'charts/a1.php'; ?>
+    <?php    include_once 'recent.php';?>
    <!-- <iframe src="recent.php" style=" width:940px; hight:100%; overflow:visible; frameborder=0;"  onload='javascript:resizeIframe(this);' ></iframe> -->
       
       </div>
@@ -127,8 +127,8 @@ ddsmoothmenu.init({
         
   </div>
 <div  style="display:block;">
-   <?php include_once 'charts/a1.php'; ?>
-   <?php include_once 'charts/a2.php'; ?>
+   <?php //include_once 'charts/a1.php'; ?>
+   <?php // include_once 'charts/a2.php'; ?>
 </div>
 <div class="cleaner"></div>
 

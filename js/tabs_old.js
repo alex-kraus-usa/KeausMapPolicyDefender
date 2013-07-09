@@ -2,7 +2,7 @@ window.onload=function() {
 
   // get tab container
   	var container = document.getElementById("tabContainer");
-		var tabcon = document.getElementById("tabscontent");
+	var tabcon = document.getElementById("tabscontent");
 		//alert(tabcon.childNodes.item(1));
     // set current tab
     var navitem = document.getElementById("tabHeader_1");
@@ -11,15 +11,25 @@ window.onload=function() {
     var ident = navitem.id.split("_")[1];
 		//alert(ident);
     navitem.parentNode.setAttribute("data-current",ident);
-    //set current tab with class of activetabheader
+    //set current tab with class of activetabheader   
     navitem.setAttribute("class","tabActiveHeader");
+	/*Alex jQuery tabs*/
+	$("#tabscontent .tabpage").each( function() {
+		$(this).css("display","none");
+	});
+	$('#tabpage_1').css("display","block");
+	/*Alex jQuery tabs*/
+     
+    
 
     //hide two tab contents we don't need
-   	 var pages = tabcon.getElementsByTagName("div");
-    	for (var i = 1; i < pages.length; i++) {
+   	// var pages = tabcon.getElementsByTagName("div");
+    /*	for (var i = 1; i < pages.length; i++) {    	 
      	 pages.item(i).style.display="none";
-		};
-
+     	 
+		};*/
+     
+		
     //this adds click event to tabs
     var tabs = container.getElementsByTagName("li");
     for (var i = 0; i < tabs.length; i++) {
