@@ -105,8 +105,8 @@ ddsmoothmenu.init({
     <div id="tabscontent" align="center">
     
       <div class="tabpage" id="tabpage_1">
-      <?php include_once 'charts/a1.php'; ?>
-    <?php    include_once 'recent.php';?>
+      <?php include_once 'charts/a3.php'; ?>
+    <?php   // include_once 'recent.php';?>
    <!-- <iframe src="recent.php" style=" width:940px; hight:100%; overflow:visible; frameborder=0;"  onload='javascript:resizeIframe(this);' ></iframe> -->
       
       </div>
